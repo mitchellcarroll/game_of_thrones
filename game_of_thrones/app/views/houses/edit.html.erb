@@ -1,0 +1,12 @@
+<h2>Edit House</h2>
+
+<%= form_for @house do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for @house, method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>

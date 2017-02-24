@@ -23,11 +23,11 @@ class HousesController < ApplicationController
     redirect_to house_path(@house)
   end
 
-  def delete
+  def destroy
     @house = House.find(params[:name])
     @house.destory
 
-    redirect_to house_path
+    redirect_to houses_path
   end
 
   private
