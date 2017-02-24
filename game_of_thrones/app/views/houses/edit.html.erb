@@ -1,6 +1,6 @@
 <h2>Edit House</h2>
 
-<%= form_for @house do |f| %>
+<%= form_for @house, method: :put do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 

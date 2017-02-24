@@ -1,0 +1,12 @@
+<h2>Edit Character</h2>
+
+<%= form_for [@house, @character], method: :put do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for [@house, @character], method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>

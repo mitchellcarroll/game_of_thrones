@@ -1,12 +1,5 @@
 <h2><%= @house.name %> <%= link_to "(edit)", edit_house_path(@house) %></h2>
-<h4><%= @artist.nationality %></h4>
-
-<h3>Houses <%= link_to "(+)", new_house_path %></h3>
-
-<ul>
-  <% @artist.songs.each do |song| %>
-    <li>
-      <%= link_to "#{song.title} (#{song.album})", song %>
-    </li>
-  <% end %>
-</ul>
+<h2>Characters</h2>
+<% @characters.each do |character| %>
+  <%= link_to character.name, house_character_path(@house, character) %>
+<% end %>
