@@ -1,3 +1,3 @@
 class Character < ActiveRecord::Base
-  belong_to :house
+  belongs_to :house
 end
